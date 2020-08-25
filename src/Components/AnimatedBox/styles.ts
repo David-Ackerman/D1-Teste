@@ -7,8 +7,8 @@ export const  Container = styled.li`
 
   &:hover {
     > div{
-      opacity: 1;
       margin-left: 2px;
+      opacity: 1;    
     }
     > svg{   
       fill: var(--blue);
@@ -21,10 +21,11 @@ export const  Container = styled.li`
 `;
 
 export const TextBox = styled.div`
-  position: absolute;
-  left: 2vw;
-  z-index: 10;
   margin-left: 12px;
+  position: absolute;
+  left: 2vw; 
+  z-index: 5;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,11 +34,12 @@ export const TextBox = styled.div`
   border-radius: 6px;
   box-shadow: 1px 1px 6px #00000029;
   opacity: 0;
+  cursor: default;
+
   transition-property: margin opacity display;
   transition-duration: 0.35s;
   transition-timing-function: ease-in-out;
   
-  cursor: default;
   > span {
     margin: 10px  14px 10px 4px;
     font-size: 12px;
@@ -50,7 +52,8 @@ export const TextBox = styled.div`
 export const ArrowBuble = styled(BsPlayFill)`
   width: 14px;
   height: 14px;
-  transform: rotate(180deg);
   margin-left: -8px;
+
+  transform: rotate(180deg);
   fill:var(--true-white);
 `;

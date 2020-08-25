@@ -1,27 +1,29 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import { PlusIcon, FaSearch, BsPlayFill } from '../../styles/Icons';
 
 export const Container = styled.header`
-  background-color: var(--background);
   width: 100%;
   height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 4px;
-  padding-right: 2px;
   position: sticky;
   left: 0;
   top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+
+  background-color: var(--background);
 `;
 
 export const LeftDiv = styled.div`
   width: 50%;
   height: 100%;
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  position: relative;
   
   .visible{
     opacity: 1;
@@ -29,13 +31,15 @@ export const LeftDiv = styled.div`
 `;
 
 export const User = styled.div`
-  background-color: var(--blue);
   width: 24px;
   height: 24px;
-  border-radius: 50%;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-color: var(--blue);
+  border-radius: 50%;
   cursor: default;
 
   > strong{
@@ -48,18 +52,21 @@ export const User = styled.div`
 `;
 
 export const BoxName = styled.div`
-  z-index: 6;
-  background-color: var(--box-name);
-  position: absolute;
+  padding: 5px;
   margin-left: 30px;
+  position: absolute;
+  z-index: 6;
+
   display: flex;
-  box-shadow: 1px 2px 6px #00000056;
   align-items: center;
   justify-content: center;
+
+  background-color: var(--box-name);
+  box-shadow: 1px 2px 6px #00000056;
+  border-radius: 6px;
   opacity: 0;
   transition: opacity 0.4s;
-  padding: 5px;
-  border-radius: 6px;
+
   > strong{
     margin: 6px 8px;
     font-size: 14px;
@@ -67,22 +74,24 @@ export const BoxName = styled.div`
   }
   > svg {
     fill: var(--box-name);
-    
   }  
 `;
 
 export const AcmeLogoDiv = styled.div`
-  position: absolute;
-  margin-left: 35px;
   width: 90px;
   height: 30px;
-  background-color: var(--true-white);
-  border: 1px solid #EBEEF6;
-  border-radius: 5px;
+  margin-left: 35px;
+  position: absolute;
+
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2px 11px;
+  
+  background-color: var(--true-white);
+  border: 1px solid #EBEEF6;
+  border-radius: 5px;
+  
   > img {
     width: 100%;
   }
@@ -93,14 +102,17 @@ export const SearchDiv = styled.div`
 `;
 
 export const InputContainer = styled.div`
+  width: 300px;
+  height: 35px;
+  
   display: flex;
   align-items: center;
+  padding-left: 10px;
+
   background-color: var(--true-white);
   border: 1px solid #CCCFDE;
   border-radius: 5px;
-  width: 300px;
-  height: 35px;
-  padding-left: 10px;
+   
   :hover,
   :focus-within{
     box-shadow: 1px 1px 6px #00000029;
@@ -112,10 +124,13 @@ export const InputContainer = styled.div`
 
 export const Input = styled.input`
   width: 100%;
+
   padding: 10px;
+
   font-family: 'gotham-book';
   font-size: 14px;
   color: var(--color-text);
+
   ::placeholder{
     color: var(--color-text-lighter);
   }
@@ -123,33 +138,36 @@ export const Input = styled.input`
 
 
 export const Button = styled.button`
-  background-color: var(--blue);
-  border-radius: 5px;
   width: 150px;
   height: 35px;
   margin-left: 15px;
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content:center;
-  position: relative;
+
+  background-color: var(--blue);
+  border-radius: 5px;
   cursor: pointer;
 
   .animation{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+   
     background: transparent linear-gradient(90deg, #00E1FF,  var(--blue));
     opacity: 0;
     transition: opacity 0.5s;
-    position:absolute;
-    width: 100%;
-    height: 100%;
     border-radius: 5px;
-    
   }
   .text{
-    /* z-index:5; */
     position:absolute;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     > svg{
       margin-right: 5px;    
     }
@@ -165,21 +183,25 @@ export const Button = styled.button`
   }
 `;
 
-export const PlusStyled = styled(PlusIcon)`
+const IconCSS = css`
   width: 14px;
   height: 14px;
+`;
+
+export const PlusStyled = styled(PlusIcon)`
+  ${IconCSS}
   fill: var(--true-white);
 `;
 
 export const SearchStyled = styled(FaSearch)`
-  width: 14px;
-  height: 14px;
+  ${IconCSS}
   fill: var(--blue);
 `;
 
 export const ArrowBuble = styled(BsPlayFill)`
-  width: 14px;
-  height: 14px;
-  transform: rotate(180deg);
+  ${IconCSS}
   margin-left: -13px;
+
+  transform: rotate(180deg);
+  
 `;

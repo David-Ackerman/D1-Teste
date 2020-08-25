@@ -2,39 +2,45 @@ import styled, { css } from 'styled-components';
 import { TableIcon, SendIcon, PlayIcon, PenIcon, BedIcon, CheckIcon } from  '../../styles/Icons';
 
 export const Container = styled.div`
-  margin-top: 8vh;
-  display: flex;
-  align-items: flex-start;
   width: 100%;
   height: 100%;
+  margin-top: 8vh;
+
+  display: flex;
+  align-items: flex-start;
 `;
 
 
 export const Filters = styled.div`
+  width: 15vw;
   margin-left: 1px;
   margin-right: 10px;
-  width: 15vw;
+  position: sticky;
+  left: 0;
+  top: 140px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
   > strong {
     color: var(--color-text);
     font-size: 16px;
   }
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  
   > ul{
     margin-top: 35px;
     width: 100%;
   }
-  position: sticky;
-  left: 0;
-  top: 140px;
 `;
 
 export const FilterItemContainer = styled.div`
+  margin-bottom: 12px;
+
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 12px;
+  
   .active {
     > span{
       font-family: 'Gotham-Bold';
@@ -61,6 +67,7 @@ export const FilterItemContainer = styled.div`
 export const JorneyItemText = styled.div`
   width: 100%;
   height: 25px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,22 +82,26 @@ export const JorneyItemText = styled.div`
 export const Quantity = styled.strong`
   width: 22px;
   height: 22px;
-  background-color: var(--quantity-box);
-  color: var(--color-text-lighter);
-  border-radius: 50%;
+
   display: flex;
-  font-size: 11px;
   align-items: center;
   justify-content: center;
   padding-right: 1px;
+
+  background-color: var(--quantity-box);
+  color: var(--color-text-lighter);
+  border-radius: 50%; 
+  font-size: 11px;
 `;
 
 export const MainContainer = styled.main`
+  width: 100%;
+  height: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+
   > span{
     font-size: 80px;
     font-family: 'Gotham-Book';
@@ -98,13 +109,15 @@ export const MainContainer = styled.main`
 `;
 
 export const ListDiv = styled.div`
-  margin-top: 55px;
   width: 800px;
   height: 100%;
-  overflow: auto;
+  margin-top: 55px; 
+  
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
+  overflow: auto;
 `;
 
 export const Legend = styled.ul`
@@ -113,6 +126,7 @@ export const Legend = styled.ul`
   grid-template-areas: "name destiny . success . status";
   padding-left: 10px;
   padding-right: 15px;
+  
   > li {
     color: var(--color-text-lighter);
     font-family: 'Gotham-Book';

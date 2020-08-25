@@ -20,7 +20,6 @@ import {
 import logotipo from '../../assets/images/logotipo.png';
 import AnimatedBox from '../AnimatedBox';
 
-
 const SideBar: React.FC = () => {
   return (
     <Detail>

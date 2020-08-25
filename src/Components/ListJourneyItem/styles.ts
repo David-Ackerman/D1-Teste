@@ -4,16 +4,19 @@ export const Container = styled.div`
   width: 100%;
   height: 45px;
   margin-top: 11px;
-  background-color: var(--true-white);
-  padding-left: 10px;
-  padding-right: 15px;
+
   display: flex;
   align-items: center;
+  padding-left: 10px;
+  padding-right: 15px;
+
+  background-color: var(--true-white);
   border-radius: 4px;
 `;
 
 export const Grid = styled.div`
   width: 100%;
+
   display: grid;
   grid-template-columns: 8fr 3fr 1fr 3fr 2fr 4fr;
   grid-template-areas: "name destiny . success . status";
@@ -38,8 +41,10 @@ export const Grid = styled.div`
 
 export const Status = styled.div`
   grid-area: status;
+  
   display: flex;
   align-items: center;
+
   > span{
     font-family: 'Gotham-Book';
     font-size: 14px;

@@ -49,8 +49,7 @@ const Header: React.FC = () => {
         <InputContainer>
           <SearchStyled />
           <Input placeholder="Buscar" type="text" />
-        </InputContainer>
-        
+        </InputContainer>      
         <Button onClick={toogleModalVisibility} >
           <div className="animation" />
           <div className= "text">

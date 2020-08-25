@@ -12,61 +12,69 @@ import {
 } from '../../styles/Icons';
 
 export const Detail = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: transparent linear-gradient(90deg, #00E1FF 0%, #117EFF 100%);
   width: 4.5vw;
   height: 100vh;
   position: sticky;
   top: 0;
   left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: transparent linear-gradient(90deg, #00E1FF 0%, #117EFF 100%);
 `;
 
 export const Container = styled.nav`
+  width: 100%;
+  height: calc(100vh - 6px);
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--side-bar);
   padding: 4.4vh 0;
-  width: 100%;
-  height: calc(100vh - 6px);
+
+  background-color: var(--side-bar);
   > img {
     width: calc(100% - 36px);
   }
 `;
+
 export const MidIcons = styled.ul`
   height: 27vh;
   margin-top: -220px;
+  position: relative; 
+
   display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  position: relative; 
 `;
+
 export const LowIcons = styled.ul`
   height: 18vh;
+  position: relative;
+
   display:flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  position: relative;
 `;
 
 export const Line = styled.li`
-  background: linear-gradient(90deg, #00E1FF 0%, #117EFF 100%) 0% 0% no-repeat padding-box;
-  width: 22px;
-  height: 2px; 
+  width: 100%;
+  height: 2px;
+
+  background: linear-gradient(90deg, #00E1FF 0%, #117EFF 100%);
 `;
 
-
 const CSSIcon = css`
-  margin: 0;
   width: 20px;
   height: 21px;
-  fill: var(--icons-white);
+  margin: 0;
 
+  fill: var(--icons-white);
 `;
 
 export const PieChartStyled = styled(BiPieChart)`${CSSIcon}`;
