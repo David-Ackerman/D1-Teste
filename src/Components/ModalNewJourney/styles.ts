@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width:100%;
   height: 100%;
+  z-index: 10;
   .display-flex {
     display: flex;
   }
@@ -18,7 +19,7 @@ export const Visibility = styled.div`
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
-  z-index: 10;
+  
 `;
 
 export const ModalBox = styled.section`

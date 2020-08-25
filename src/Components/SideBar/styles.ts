@@ -16,7 +16,7 @@ export const Detail = styled.div`
   flex-direction: column;
   justify-content: center;
   background: transparent linear-gradient(90deg, #00E1FF 0%, #117EFF 100%);
-  width: 4.8vw;
+  width: 4.5vw;
   height: 100vh;
   position: sticky;
   top: 0;

@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   margin-right: 6vw;
   margin-left: 6vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: space-between;
 `;

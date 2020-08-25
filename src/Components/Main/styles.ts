@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { TableIcon, SendIcon, PlayIcon, PenIcon, BedIcon, CheckIcon } from  '../../styles/Icons';
 
 export const Container = styled.div`
-  margin-top: 50px;
+  margin-top: 8vh;
   display: flex;
   align-items: flex-start;
   width: 100%;

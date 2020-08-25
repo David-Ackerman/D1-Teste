@@ -32,7 +32,6 @@ const Header: React.FC = () => {
 
   return (
     <Container>
-      <ModalNewJourney show={showModal} handleClose={toogleModalVisibility} />
       <LeftDiv>
         <User  onMouseEnter={toogleBubbleVisibility} onMouseLeave={toogleBubbleVisibility} >
           <strong>D</strong>
@@ -45,6 +44,7 @@ const Header: React.FC = () => {
           <img src={Acme} alt="Acme" />
         </AcmeLogoDiv>
       </LeftDiv>
+      <ModalNewJourney show={showModal} handleClose={toogleModalVisibility} />
       <SearchDiv>
         <InputContainer>
           <SearchStyled />
