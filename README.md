@@ -14,8 +14,9 @@ D1 Teste
 
 [//]: # (Add your gifs/images here:)
 <div>
-  <img src="https://github.com/David-Ackerman/NLW-proffy/blob/master/ProffyImages/ProffyTFGif.gif" alt="demo" height="425">
-  <img src="https://github.com/David-Ackerman/NLW-proffy/blob/master/ProffyImages/ProffyTLGif.gif" alt="demo" height="425">
+  <img src="https://github.com/David-Ackerman/D1-Teste/blob/master/PageView/D1TesteGif.gif" alt="demo" height="425">
+  <img src="https://github.com/David-Ackerman/D1-Teste/blob/master/PageView/Initial.PNG" alt="demo" height="425">
+  <img src="https://github.com/David-Ackerman/D1-Teste/blob/master/PageView/modal.PNG" alt="demo" height="425">
 </div>
 
 <hr />
